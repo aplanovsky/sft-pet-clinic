@@ -2,7 +2,7 @@ package my.springframework.sftpetclinic.model;
 
 import java.time.LocalDate;
 
-public class Pet {
+public class Pet extends BaseEntity{
 
   private PetData petData;
   private Owner owner;
