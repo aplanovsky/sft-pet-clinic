@@ -2,7 +2,7 @@ package my.springframework.sftpetclinic.services.map;
 
 import my.springframework.sftpetclinic.model.Speciality;
 import my.springframework.sftpetclinic.model.Vet;
-import my.springframework.sftpetclinic.services.SpecialityService;
+import my.springframework.sftpetclinic.services.SpecialtyService;
 import my.springframework.sftpetclinic.services.VetService;
 import org.springframework.stereotype.Service;
 
@@ -10,9 +10,9 @@ import java.util.Set;
 @Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
-  private final SpecialityService specialityService;
+  private final SpecialtyService specialityService;
 
-  public VetServiceMap(SpecialityService specialityService) {
+  public VetServiceMap(SpecialtyService specialityService) {
     this.specialityService = specialityService;
   }
 
